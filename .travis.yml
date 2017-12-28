@@ -3,11 +3,13 @@ language: node_js
 node_js:
   - "node"
 
+script: yarn build
+
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_API_KEY # Set in travis-ci.org dashboard
   target_branch: master
-  local_dir: ${TRAVIS_BUILD_DIR}/dist
+  local_dir: ${TRAVIS_BUILD_DIR}/dist/*
   on:
     branch: dev
