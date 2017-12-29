@@ -1,13 +1,20 @@
 <template>
    <div id="projects">
-      <div class="row">
-         <quote-generator />
+      <div>
+        <h2>Free Code Camp Components:</h2>
+        <hr />
+        <br />
+        <div class="row">
+          <quote-generator />
+          <pomodoro />
+        </div>
       </div>
    </div>
 </template>
 
 <script>
 import Quotes from './projects/Quotes'
+import Pomodoro from './projects/Pomodoro'
 
 export default {
   name: 'projects',
@@ -15,7 +22,8 @@ export default {
     return {}
   },
   components: {
-    'quote-generator': Quotes
+    'quote-generator': Quotes,
+    'pomodoro': Pomodoro
   }
 }
 </script>

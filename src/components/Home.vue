@@ -1,8 +1,7 @@
 <template>
   <div class="home">
     <h1>{{ msg }}</h1>
-    <lorem-ipsum/>
-    <projects/>
+    <content-container/>
   </div>
 </template>
 
@@ -18,7 +17,7 @@ export default {
     }
   },
   components: {
-    'lorem-ipsum': Content,
+    'content-container': Content,
     'projects': Projects
   }
 }

@@ -1,9 +1,34 @@
 <template>
 <div id="content">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis felis ut nisl commodo, sed fermentum nibh porta. Quisque dictum id lectus sit amet vestibulum. Morbi non libero metus. Aenean lobortis id orci id faucibus. Aliquam erat volutpat. Fusce eleifend, diam non ullamcorper faucibus, mauris ligula viverra massa, in dictum dolor sem et nisi. Nullam sodales metus ut nisi semper condimentum fermentum varius dui. Maecenas egestas dignissim molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis felis magna, venenatis et massa a, vehicula consequat risus. Aenean a tellus nulla. Fusce malesuada leo sed elit varius, ut pharetra ex fermentum. Vestibulum ac vestibulum purus, id venenatis risus. Aenean eros sapien, faucibus id dolor at, scelerisque imperdiet lacus. Donec malesuada, nulla ac porttitor vehicula, lacus eros scelerisque odio, et faucibus arcu nulla eu elit. Vestibulum luctus consectetur mi, non scelerisque nisi consectetur non.</p>
+	<p>Hello and welcome to my portfolio page! Below you'll find various open-source projects and components from <a href="https://freecodecamp.org">Free Code Camp</a> excercises. I'm a software developer, currently working for NCR with a specialization in bringing together hardware testing tools and front-end test orchestration. I primarily work in C#, but I also have experience in PHP, Javascript, Python, and C++ for Windows. I am very interested in learning more about computers and the various open-source tools available to me.</p>
 
-	<p>In eget libero efficitur, elementum arcu non, feugiat lectus. Pellentesque interdum mi in volutpat interdum. Aliquam euismod et nulla sit amet sagittis. Sed magna est, iaculis eget dignissim eu, scelerisque at felis. Nunc ac mi et diam cursus mattis. Nunc magna ante, mollis eu aliquet eu, suscipit non tortor. Vestibulum porttitor lorem ac ex convallis, et blandit ex semper.</p>
+	<p>
 
-	<p>Integer varius cursus libero eu interdum. Fusce laoreet feugiat turpis. Cras ut tempor tellus, vel scelerisque libero. Etiam ultrices ultrices libero ullamcorper dignissim. Cras consectetur vehicula lectus ac lobortis. Mauris pellentesque nulla eu dui vestibulum ultrices vitae sit amet odio. Phasellus semper nec lectus sed faucibus. Maecenas tempus pellentesque pellentesque. Nunc tempus fermentum tortor at viverra. Donec viverra magna id nisl malesuada, a aliquam sapien dignissim. Praesent ut dui et sapien egestas lacinia. Donec aliquet imperdiet nisi quis ultrices.</p>
+    Some of the open source tools that I enjoy working with are:
+
+    <ul>
+      <li>Docker</li>
+      <li>Jenkins</li>
+      <li>Proxmox</li>
+      <li>Mattermost</li>
+      <li>Gitlab</li>
+      <li>Unity</li>
+    </ul>
+
+    I also enjoy trying out different web frameworks. Some of my favorite web frameworks include:
+
+    <ul>
+      <li>Laravel</li>
+      <li>ASP.NET Core</li>
+      <li>Phoenix</li>
+      <li>Vue.js</li>
+      <li>Bootstrap</li>
+      <li>Express.js</li>
+      <li>Buffalo</li>
+    </ul>
+
+  </p>
+
+	<p>In addition to my professional career I also enjoy building open source projects.</p>
 </div>
 </template>
