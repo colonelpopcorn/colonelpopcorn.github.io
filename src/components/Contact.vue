@@ -1,7 +1,7 @@
 <template>
-    <div id="contact">
-        <p>Contact me here.</p>
-    </div>
+  <div id="contact">
+      <p>Contact me here.</p>
+  </div>
 </template>
 
 <script>

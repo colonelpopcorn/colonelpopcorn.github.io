@@ -7,7 +7,6 @@
 
 <script>
 import Content from './Content'
-import Projects from './Projects'
 
 export default {
   name: 'hello',
@@ -17,8 +16,7 @@ export default {
     }
   },
   components: {
-    'content-container': Content,
-    'projects': Projects
+    'content-container': Content
   }
 }
 </script>

@@ -6,29 +6,33 @@
 
     Some of the open source tools that I enjoy working with are:
 
-    <ul>
-      <li>Docker</li>
-      <li>Jenkins</li>
-      <li>Proxmox</li>
-      <li>Mattermost</li>
-      <li>Gitlab</li>
-      <li>Unity</li>
-    </ul>
-
-    I also enjoy trying out different web frameworks. Some of my favorite web frameworks include:
-
-    <ul>
-      <li>Laravel</li>
-      <li>ASP.NET Core</li>
-      <li>Phoenix</li>
-      <li>Vue.js</li>
-      <li>Bootstrap</li>
-      <li>Express.js</li>
-      <li>Buffalo</li>
-    </ul>
+    <div class="row">
+      <div class="card bigger">Docker</div>
+      <div class="card bigger">Jenkins</div>
+      <div class="card bigger">Proxmox</div>
+      <div class="card bigger">Mattermost</div>
+      <div class="card bigger">Gitlab</div>
+      <div class="card bigger">Unity</div>
+      <div class="card bigger">Laravel</div>
+      <div class="card bigger">ASP.NET Core</div>
+      <div class="card bigger">Phoenix</div>
+      <div class="card bigger">Vue.js</div>
+      <div class="card bigger">Bootstrap</div>
+      <div class="card bigger">Express.js</div>
+      <div class="card bigger">Buffalo</div>
+    </div>
 
   </p>
-
-	<p>In addition to my professional career I also enjoy building open source projects.</p>
 </div>
 </template>
+
+<style>
+.bigger {
+  height: 150px;
+  width: 200px;
+  font-size: 25px;
+  text-align: center;
+}
+
+</style>
+
