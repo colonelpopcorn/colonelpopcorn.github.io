@@ -7,32 +7,27 @@
     Some of the open source tools that I enjoy working with are:
 
     <div class="row">
-      <div class="card bigger">Docker</div>
-      <div class="card bigger">Jenkins</div>
-      <div class="card bigger">Proxmox</div>
-      <div class="card bigger">Mattermost</div>
-      <div class="card bigger">Gitlab</div>
-      <div class="card bigger">Unity</div>
-      <div class="card bigger">Laravel</div>
-      <div class="card bigger">ASP.NET Core</div>
-      <div class="card bigger">Phoenix</div>
-      <div class="card bigger">Vue.js</div>
-      <div class="card bigger">Bootstrap</div>
-      <div class="card bigger">Express.js</div>
-      <div class="card bigger">Buffalo</div>
+      <icon-card v-for="(item, index) in tech" :key="index" :tech-name="item.name" :icon-src="item.icon" :card-link="item.link"/>
     </div>
 
   </p>
 </div>
 </template>
 
-<style>
-.bigger {
-  height: 150px;
-  width: 200px;
-  font-size: 25px;
-  text-align: center;
+<script>
+import IconCard from './IconCard/IconCard'
+import tech from '../data/tech.json'
+
+export default {
+  components: {
+    'icon-card': IconCard
+  },
+  data () { return { tech: tech.items } }
 }
+
+</script>
+
+<style>
 
 </style>
 

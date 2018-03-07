@@ -7,8 +7,15 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import 'font-awesome/css/font-awesome.min.css'
 
+const mainTitle = 'colonelpopcorn.github.io'
+
 Vue.use(VueAxios, axios)
 Vue.config.productionTip = false
+
+router.beforeEach((to, from, next) => {
+  document.title = `${to.meta.title} - ${mainTitle}`
+  next()
+})
 
 /* eslint-disable no-new */
 new Vue({

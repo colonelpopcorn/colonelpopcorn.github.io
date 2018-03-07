@@ -11,17 +11,26 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
+      meta: {
+        title: 'Home'
+      }
     },
     {
       path: '/blog',
       name: 'Blog',
-      component: Blog
+      component: Blog,
+      meta: {
+        title: 'Blog'
+      }
     },
     {
       path: '/contact',
       name: 'Contact',
-      component: Contact
+      component: Contact,
+      meta: {
+        title: 'Contact'
+      }
     },
     {
       path: '/home',
