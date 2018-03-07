@@ -5,6 +5,7 @@ node_js:
 
 script:
   - yarn build
+  - ls -al ${TRAVIS_BUILD_DIR}
   - if [ ! -d ${TRAVIS_BUILD_DIR}/dist ]; then exit 1 fi
 
 deploy:
