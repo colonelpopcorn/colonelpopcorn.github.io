@@ -1,7 +1,7 @@
 <template>
-  <div class="card bigger" @click="doSomething" :href="cardLink">
-    <img class="image-resize" :src="iconSrc">
-    <h3 class="tech-name">{{ techName }}</h3>
+  <div class="card bigger" @click="openLink ">
+    <img class="image-resize" :src="iconSrc" @click="openLink">
+    <h3 class="tech-name" @click="openLink">{{ techName }}</h3>
   </div>
 
 </template>
@@ -10,8 +10,9 @@
 export default {
   props: ['techName', 'iconSrc', 'cardLink', 'imageType'],
   methods: {
-    doSomething (event) {
-      var href = event.target.getAttribute('href')
+    openLink  (event) {
+      event.stopPropagation()
+      var href = this.cardLink
       if (href) {
         window.open(href, '_blank')
       } else {
@@ -24,16 +25,18 @@ export default {
 </script>
 <style>
 .bigger {
+  max-width: 240px;
+  max-height: 240px;
   min-height: 140px;
-  min-width: 60px;
+  min-width: 140px;
   text-align: center;
 }
 .bigger:hover {
   cursor: pointer;
 }
 .image-resize {
-  height: 140px;
-  width: 140px;
+  height: 120px;
+  width: 120px;
   margin: auto;
   margin-top: 10px;
 }
