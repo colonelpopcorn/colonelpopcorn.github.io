@@ -6,13 +6,12 @@ node_js:
 script:
   - yarn build
   - ls -al ${TRAVIS_BUILD_DIR}
-  - if [ ! -d ${TRAVIS_BUILD_DIR}/dist ]; then exit 1 fi
 
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_API_KEY # Set in travis-ci.org dashboard
   target_branch: master
-  local_dir: ${TRAVIS_BUILD_DIR}/dist
+  local_dir: ${TRAVIS_BUILD_DIR}/dist/
   on:
     branch: dev
