@@ -15,7 +15,7 @@
   <h1>Tools</h1>
     <hr />
     <div class='row'>
-      <icon-card v-for='(item, index) in tech' :key='index' :tech-name='item.name' :icon-src='item.icon' :card-link='item.link'/>
+      <icon-card v-for='(item, index) in tools' :key='index' :tech-name='item.name' :icon-src='item.icon' :card-link='item.link'/>
     </div>
 </div>
 </template>
@@ -29,7 +29,7 @@ export default {
   },
   data () {
     return {
-      tech: [
+      tools: [
         { 'name': 'Docker', 'icon': 'https://www.docker.com/sites/default/files/vertical.png', 'link': 'https://www.docker.org/' },
         { 'name': 'Jenkins', 'icon': 'https://wiki.jenkins.io/download/attachments/2916393/headshot.png', 'link': 'https://jenkins.io/' },
         { 'name': 'Proxmox', 'icon': 'https://www.proxmox.com/images/proxmox/Proxmox_standard_logo_stacked_hex_160x160.png', 'link': 'https://www.proxmox.com/en/' },
@@ -44,6 +44,9 @@ export default {
         { 'name': 'Express.js', 'icon': 'https://i2.wp.com/nodejs-cloud.com/img/128px/expressjs.png', 'link': 'https://expressjs.com/' },
         { 'name': 'Hugo', 'icon': 'https://assets.gitlab-static.net/uploads/-/system/project/avatar/912096/hugo.png', 'link': 'https://gohugo.io/' },
         { 'name': 'Kotlin', 'icon': 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin-logo.svg/512px-Kotlin-logo.svg.png', 'link': 'https://kotlinlang.org/' }
+      ],
+      projects: [
+        { 'name': '', 'url': '' }
       ]
     }
   }

@@ -3,7 +3,9 @@ language: node_js
 node_js:
   - "node"
 
-script: yarn build
+script:
+  - yarn build
+  - if [ ! -d ${TRAVIS_BUILD_DIR}/dist ]; then exit 1 fi
 
 deploy:
   provider: pages
