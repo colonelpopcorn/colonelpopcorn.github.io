@@ -33,7 +33,7 @@ export default new Router({
       }
     },
     {
-      path: '/home',
+      path: '*',
       redirect: '/'
     }
   ]
