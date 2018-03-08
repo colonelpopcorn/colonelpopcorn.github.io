@@ -1,31 +1,36 @@
 <template>
-<div id='content'>
+<div id="content">
 	<p>
-    Hello and welcome to my portfolio page! Below you'll find various open-source projects and components from <a href='https://freecodecamp.org'>Free Code Camp</a> excercises. I'm a UI developer, currently working for Aptean on a UI framework for internal use. I primarily work in JavaScript, but I also have experience in C#, PHP, Python, and C++ for Windows. I am very interested in learning more about computers and the various open-source tools available to me.
+    Hello and welcome to my portfolio page! Below you'll find various open-source projects and components from <a href="https://freecodecamp.org">Free Code Camp</a> excercises. I'm a UI developer, currently working for Aptean on a UI framework for internal use. I primarily work in JavaScript, but I also have experience in C#, PHP, Python, and C++ for Windows. I am very interested in learning more about computers and the various open-source tools available to me.
   </p>
   <p>
     Over the years I've built a few open-source projects. These projects have solved a wide range of problems from process management in a repair depot to a simple microservice that sends email notifications. Some of them have no releases yet, and are very much a work in progress. If you'd like to contribute just go to the project and open an issue to work on.
   </p>
   <h1>Projects</h1>
   <hr />
+  <div class="row">
+    <project-card v-for="(item, index) in projects" :key="index" :project-name="item.name" :project-desc="item.desc" :card-link="item.url" />
+  </div>
 
 	<p>
     Some of the open source tools that I enjoy working with are:
   </p>
   <h1>Tools</h1>
-    <hr />
-    <div class='row'>
-      <icon-card v-for='(item, index) in tools' :key='index' :tech-name='item.name' :icon-src='item.icon' :card-link='item.link'/>
-    </div>
+  <hr />
+  <div class="row">
+    <icon-card v-for="(item, index) in tools" :key="index" :tech-name="item.name" :icon-src="item.icon" :card-link="item.link"/>
+  </div>
 </div>
 </template>
 
 <script>
 import IconCard from './Cards/IconCard'
+import ProjectCard from './Cards/ProjectCard'
 
 export default {
   components: {
-    'icon-card': IconCard
+    'icon-card': IconCard,
+    'project-card': ProjectCard
   },
   data () {
     return {
@@ -46,7 +51,10 @@ export default {
         { 'name': 'Kotlin', 'icon': 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin-logo.svg/512px-Kotlin-logo.svg.png', 'link': 'https://kotlinlang.org/' }
       ],
       projects: [
-        { 'name': '', 'url': '' }
+        { 'name': 'RadDock', 'desc': 'A configurable interface for starting desktop applications on Windows.', 'url': 'https://github.com/colonelpopcorn/RadDock' },
+        { 'name': 'Processaurus', 'desc': 'A content management system for process documents.', 'url': 'https://github.com/colonelpopcorn/Processaurus' },
+        { 'name': 'calf', 'desc': 'A generator for repeatable infrastructure as code.', 'url': 'https://github.com/colonelpopcorn/calf' },
+        { 'name': 'HardCandy', 'desc': 'A hardware test runner and suite for multiple operating systems.', 'url': 'https://github.com/colonelpopcorn/HardCandy' }
       ]
     }
   }
