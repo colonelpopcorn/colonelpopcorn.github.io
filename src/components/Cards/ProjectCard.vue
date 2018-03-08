@@ -23,7 +23,13 @@
   }
 </script>
 <style>
+.project {
+  max-width: 280px;
+  min-height: 150px;
+
+}
 .project:hover {
   cursor: pointer;
+
 }
 </style>
