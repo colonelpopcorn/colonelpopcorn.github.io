@@ -5,10 +5,11 @@ import 'material-design-icons-iconfont/dist/material-design-icons.css';
 
 import App from './App.vue';
 
-window.onload = () => {
-  Vue.use(Vuetify);
-  new Vue({
-    el: '#app',
-    render: h => h(App)
-  });
-};
+Vue.use(Vuetify);
+Vue.config.productionTip = false;
+new Vue({
+  el: '#app',
+  render: h => h(App)
+});
+
+console.log("SFDASGASRHEDTH!");
