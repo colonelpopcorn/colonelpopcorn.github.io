@@ -7,13 +7,13 @@
 <script>
 
 export default {
-  props: ['techName', 'iconSrc', 'cardLink', 'imageType'],
+  props: ["techName", "iconSrc", "cardLink", "imageType"],
   methods: {
     openLink  (event) {
       event.stopPropagation()
       var href = this.cardLink
       if (href) {
-        window.open(href, '_blank')
+        window.open(href, "_blank")
       } else {
         return
       }
