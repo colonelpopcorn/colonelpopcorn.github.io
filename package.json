@@ -6,7 +6,8 @@
   "author": "Jonathan Ling <jonathanling@shamrocksweb.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.html --log-level 3 --port 1841"
+    "dev": "parcel index.html --log-level 3 --port 1841",
+    "build": "parcel build index.html"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^2.2.0",

@@ -14,8 +14,8 @@ const someStore: StoreOptions<RootState> = {
       }
     },
     mutations: {
-      toggleNavMenuOpen() : void {
-        this.state.isNavMenuOpen = !this.state.isNavMenuOpen;
+      toggleNavMenuOpen(state) : void {
+        state.isNavMenuOpen = !state.isNavMenuOpen;
       }
     }
 
