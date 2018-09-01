@@ -24,13 +24,19 @@ Vue.use(Vuex);
 Vue.config.productionTip = false;
 
 // Get some routes in here, boi!
+const mainTitle = "colonelpopcorn.github.io";
 const routes = [
-  { path: "/", component: Home },
-  { path: "/blog", component: Blog },
-  { path: "/contact", component: Contact },
+  { path: "/", component: Home, meta: { title: "Home" } },
+  { path: "/blog", component: Blog, meta: { title: "Blog" } },
+  { path: "/contact", component: Contact, meta: { title: "Contact" } },
 ];
 
 const router = new VueRouter({ routes });
+
+router.beforeEach((to, from, next) => {
+  document.title = `${to.meta.title} - ${mainTitle}`;
+  next();
+});
 
 // Finally our Vue instance is created.
 const app = new Vue({
