@@ -1,3 +1,33 @@
-.red {
-  color: red;
+@import './node_modules/mini.css/dist/mini-default.min.css';
+
+body {
+  background-color: #A7AECC;
+  color: #F2F4F8;
+}
+
+.cursor-blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+.center {
+  float: none;
+  margin: 0 auto;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.profile-image {
+  padding-top: 15%;
+  text-align: center;
+}
+
+.vertical-rule {
+  border-left: 1px solid #000;
+  height: 500px;
 }
