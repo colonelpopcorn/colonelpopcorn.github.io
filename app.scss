@@ -1,16 +1,14 @@
 @import './node_modules/mini.css/dist/mini-default.min.css';
 
+$text-color: #F2F4F8;
+
+.vue-typer .custom.char {
+  color: $text-color;
+}
+
 body {
   background-color: #A7AECC;
-  color: #F2F4F8;
-}
-
-.cursor-blink {
-  animation: blink 1s infinite;
-}
-
-@keyframes blink{
-  to{opacity: .0;}
+  color: $text-color
 }
 
 .center {
@@ -23,11 +21,20 @@ body {
 }
 
 .profile-image {
-  padding-top: 15%;
   text-align: center;
 }
 
 .vertical-rule {
   border-left: 1px solid #000;
   height: 500px;
+}
+
+.ext-link {
+  font-size: 2rem;
+}
+
+.link-span {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
