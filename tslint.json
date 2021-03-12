@@ -1,8 +1,0 @@
-{
-  "extends": "tslint:recommended",
-  "rules": {
-    "no-var-keyword": true,
-    "semicolon": true,
-    "indent": [true, "spaces"]
-  }
-}
