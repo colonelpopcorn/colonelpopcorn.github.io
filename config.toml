@@ -1,6 +1,6 @@
-baseurl = "http://example.org/"
+baseurl = "https://colonelpopcorn.github.io"
 languageCode = "en-us"
-title = "Hugo Cards"
+title = "colonelpopcorn writes software"
 theme = "hugo-cards"
 themesDir = "themes"
 paginate = 6
