@@ -6,13 +6,13 @@ themesDir = "themes"
 paginate = 6
 
 [params]
-  builtBy = "bool"
+  builtBy = "colonelpopcorn"
   defaultImage = "gopher.jpg"
 
   facebook = ""
   quora = ""
-  twitter = "http://twitter.com/bul_ikana"
-  github = "http://github.com/bul-ikana"
+  twitter = "https://twitter.com/c0l0nelp0pc0rn1
+  github = "http://github.com/colonelpopcorn"
   email = ""
 
   fbLikeBox = ""
@@ -26,5 +26,5 @@ paginate = 6
   custom_css = ["css/custom.css"]
 
   [params.copyright]
-     name = "bool"
-     link = "https://bool.netlify.com"
+     name = "Jonathan Ling"
+     link = "https://jonathanling.net"
