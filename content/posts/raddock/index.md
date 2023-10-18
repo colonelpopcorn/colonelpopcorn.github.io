@@ -5,7 +5,7 @@ date: 2021-03-23T15:20:04Z
 img: raddock.png
 draft: false
 ---
-[![Build Status](https://travis-ci.org/colonelpopcorn/RadDock.svg?branch=master)](https://travis-ci.org/colonelpopcorn/RadDock)
+[![Build Status](https://gitlab.com/colonelpopcorn/RadDock/badges/master/pipeline.svg)](https://gitlab.com/colonelpopcorn/RadDock/-/pipelines) [RadDock](https://gitlab.com/colonelpopcorn/RadDock)
 
 RadDock is a program I made while working as a computer repair technician for a company that specializes in point-of-sale computers. My original idea was to make it easy for users to find common functions that they might use once a day, but not all the time. This way they wouldn't have to minimize whatever they were working on to find their application. The idea was mainly inspired by browser bookmarks, but for everything instead of just websites. Normally, bookmarks and desktop shortcuts would solve for that use case. However, in the department I lead, there was an ingrained way of doing things that was harder to change than just writing this software. 
 
